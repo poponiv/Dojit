@@ -6,9 +6,9 @@
 	width: 90px;
 	height: 20px;
 	text-align: center;
-	
+	color: #ffffff;	
 }
-
-.social-btn a {
+.social-btn:hover {
+	background: #346cbf;
 	color: #ffffff;
 }
