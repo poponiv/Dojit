@@ -57,3 +57,10 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 # Bootstrap
 gem 'bootstrap-sass'
+
+group :doc do
+  gem 'sdoc', require: false
+end
+
+gem 'faker'
+gem 'devise'
