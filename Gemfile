@@ -63,5 +63,10 @@ group :doc do
 end
 
 gem 'faker'
+
+# User login
 gem 'devise'
+#Env Variables
 gem 'figaro'
+# Authorization gem
+gem 'pundit'
