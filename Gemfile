@@ -70,3 +70,6 @@ gem 'devise'
 gem 'figaro'
 # Authorization gem
 gem 'pundit'
+
+# Markdown support
+gem 'redcarpet'
