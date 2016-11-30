@@ -80,3 +80,6 @@ gem 'mini_magick'
 
 # Cloud services
 gem 'fog'
+
+# Pagination
+gem 'will_paginate', '~> 3.0.5'
