@@ -9,7 +9,11 @@
     </small>
     <p><%= markdown @post.body %></p>
     <%= image_tag(@post.image.url) if @post.image? %>
+    <br/><br/>
+    <%= render partial: 'comments/form', locals: {topic: @topic,  post: @post }%>
+    <%= render @comments %>
   </div>
+
   <div class="col-md-4">
     <% if policy(@post).edit? %>
       <%= link_to "Edit", edit_topic_post_path(@topic,@post), class: 'btn btn-success' %>
