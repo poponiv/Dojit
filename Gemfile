@@ -73,3 +73,10 @@ gem 'pundit'
 
 # Markdown support
 gem 'redcarpet'
+
+# Image uploading/manipulating
+gem 'carrierwave'
+gem 'mini_magick'
+
+# Cloud services
+gem 'fog'
