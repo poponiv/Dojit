@@ -1,6 +1,7 @@
 require 'rails_helper'
 
 describe Topic do
+
   describe "scopes" do
 
     before do
