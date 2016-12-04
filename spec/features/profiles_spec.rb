@@ -24,4 +24,23 @@ describe "Visiting profiles" do
     end
 
   end
+
+  include Warden::Test::Helpers
+
+  describe "signed in" do
+
+  	before do
+  		Warden.test_reset!
+  	end
+
+  	it "shows profile" do
+  	  login_as(@user, scope: :user)
+  	  visit user_path(@user)
+  	  expect(current_path).to eq(user_path(@user))
+  	  
+      expect( page ).to have_content(@user.name)
+      expect( page ).to have_content(@post.title)
+      expect( page ).to have_content(@comment.body)
+  	end
+  end
 end
