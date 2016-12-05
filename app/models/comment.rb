@@ -7,7 +7,7 @@ class Comment < ApplicationRecord
 	validates :body, length: { minimum: 5 }, presence: true
 	validates :user_id, presence: true
 
-	after_create :send_favorite_emails
+	after_create :send_favorite_emails, unless: :skip_callbacks
 
 	private
 
